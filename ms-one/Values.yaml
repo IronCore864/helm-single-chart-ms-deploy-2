@@ -1,0 +1,8 @@
+name: Tiexin
+
+msgeneric:
+  deployName: ms-one
+  imageVersion: latest
+  image:
+    repository: ironcore864/hello-world-py
+    tag: latest

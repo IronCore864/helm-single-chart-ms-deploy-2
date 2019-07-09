@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.msgeneric.deployName }}
+  namespace: default
+data:
+  name: {{ .Values.name }}

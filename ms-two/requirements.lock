@@ -1,0 +1,6 @@
+dependencies:
+- name: msgeneric
+  repository: file://../msgeneric
+  version: 0.1.0
+digest: sha256:7ffee9e21f49951b5172ea416dd16d14f1f80b392460270e8613f0a1172b0a57
+generated: 2019-07-08T18:09:45.829022+02:00
