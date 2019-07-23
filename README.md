@@ -39,4 +39,16 @@ kubectl proxy
 # open another tab
 curl http://127.0.0.1:8001/api/v1/namespaces/default/services/ms-one/proxy/
 curl http://127.0.0.1:8001/api/v1/namespaces/default/services/ms-two/proxy/
+
+## For Using Two Values Files
+
+For example, you can put common settings in `values.yaml`, while keep settings that are different bertween different ENVs in separate file, like `values.prod.yaml`.
+
+When deploying:
+
 ```
+helm install -n ms-one ./ms-one -f ./ms-one/values.prod.yaml
+```
+
+Both `values.yaml` and `values.prod.yaml` will be used and combined together, and the `values.prod.yaml` will override `values.yaml` if same keys exist in both files..
+
